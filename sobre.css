@@ -1,0 +1,300 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    color: #172033;
+    background: #f7f9fc;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header {
+    height: 78px;
+    padding: 0 7%;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 3px 20px #0000000b;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo i {
+    background: #1557d6;
+    color: white;
+    padding: 13px;
+    border-radius: 12px;
+}
+
+.logo strong {
+    display: block;
+    color: #0c3182;
+}
+
+.logo span {
+    font-size: 10px;
+    color: #68758a;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+nav a {
+    font-size: 12px;
+    font-weight: 600;
+    color: #536174;
+}
+
+nav .ativo,
+nav a:hover {
+    color: #1557d6;
+}
+
+nav .contato {
+    background: #1557d6;
+    color: white;
+    padding: 11px 17px;
+    border-radius: 9px;
+}
+
+
+.cabecalho {
+    padding: 80px 8%;
+    background: linear-gradient(120deg, #071e52, #1557d6);
+    color: white;
+
+    /* Coloca texto e imagem lado a lado */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    min-height: 500px;
+}
+
+.conteudo-cabecalho {
+    flex: 1;
+    max-width: 650px;
+}
+
+.cabecalho span,
+.tag,
+.titulo span {
+    color: #ff9b3f;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.cabecalho h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 52px;
+    max-width: 700px;
+    margin: 15px 0;
+    line-height: 1.15;
+}
+
+.cabecalho strong {
+    color: #ffad55;
+    display: block;
+}
+
+.cabecalho p {
+    color: #d8e5ff;
+    max-width: 650px;
+    line-height: 1.7;
+}
+
+
+.imagem-cabecalho {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagem-cabecalho img {
+    width: 100%;
+    max-width: 480px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 25px;
+    border: 4px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 20px 50px #00000035;
+}
+
+.historia {
+    max-width: 1150px;
+    margin: auto;
+    padding: 100px 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+    align-items: center;
+}
+
+.imagem {
+    min-height: 430px;
+    border-radius: 25px;
+    background: linear-gradient(135deg, #1557d6, #08296d);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 20px 50px #10295b20;
+}
+
+.imagem i {
+    font-size: 90px;
+    margin-bottom: 20px;
+}
+
+.imagem span {
+    font-family: "Poppins";
+    font-size: 20px;
+}
+
+.imagem small {
+    color: #c8d9f7;
+}
+
+.texto h2 {
+    font-family: "Poppins";
+    font-size: 38px;
+    margin: 12px 0 20px;
+}
+
+.texto p {
+    color: #68758a;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+
+.valores {
+    padding: 90px 7%;
+    background: white;
+}
+
+.titulo {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.titulo h2 {
+    font-family: "Poppins";
+    font-size: 38px;
+    margin-top: 10px;
+}
+
+.titulo strong {
+    color: #1557d6;
+}
+
+.cards {
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.cards article {
+    border: 1px solid #e5e9f0;
+    padding: 30px;
+    border-radius: 20px;
+    transition: .3s;
+}
+
+.cards article:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 20px 50px #10295b12;
+}
+
+.cards i {
+    color: #1557d6;
+    font-size: 30px;
+}
+
+.cards h3 {
+    font-family: "Poppins";
+    margin: 20px 0 10px;
+}
+
+.cards p {
+    color: #68758a;
+    font-size: 13px;
+}
+
+
+footer {
+    padding: 25px 7%;
+    background: #07152f;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+}
+
+footer a {
+    color: #ffad55;
+}
+
+
+@media (max-width: 800px) {
+
+    nav a:not(.contato) {
+        display: none;
+    }
+
+    .cabecalho {
+        flex-direction: column;
+        text-align: center;
+        padding: 60px 7%;
+        gap: 40px;
+    }
+
+    .conteudo-cabecalho {
+        max-width: 100%;
+    }
+
+    .cabecalho h1 {
+        font-size: 40px;
+    }
+
+    .cabecalho p {
+        margin: auto;
+    }
+
+    .imagem-cabecalho {
+        width: 100%;
+    }
+
+    .imagem-cabecalho img {
+        max-width: 450px;
+        height: 280px;
+    }
+
+    .historia,
+    .cards {
+        grid-template-columns: 1fr;
+    }
+}

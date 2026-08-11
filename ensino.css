@@ -1,0 +1,289 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background: #f7f9fc;
+    color: #172033;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header {
+    height: 78px;
+    background: white;
+    padding: 0 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 3px 20px #0001;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo i {
+    background: #1557d6;
+    color: white;
+    padding: 13px;
+    border-radius: 12px;
+}
+
+.logo strong {
+    display: block;
+    color: #0c3182;
+}
+
+.logo span {
+    font-size: 10px;
+    color: #68758a;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+nav a {
+    font-size: 12px;
+    font-weight: 600;
+    color: #536174;
+}
+
+nav .ativo {
+    color: #1557d6;
+}
+
+nav .contato {
+    background: #1557d6;
+    color: white;
+    padding: 11px 17px;
+    border-radius: 9px;
+}
+
+.hero {
+    padding: 100px 8%;
+    color: white;
+    background: linear-gradient(120deg, #071e52, #1557d6);
+}
+
+.hero span,
+.titulo span {
+    color: #ffad55;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.hero h1 {
+    font-family: "Poppins";
+    font-size: 55px;
+    margin: 15px 0;
+}
+
+.hero strong {
+    color: #ffad55;
+}
+
+.hero p {
+    color: #d9e5fa;
+    max-width: 650px;
+}
+
+.conteudo {
+    max-width: 1150px;
+    margin: auto;
+    padding: 90px 5%;
+}
+
+.titulo {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.titulo h2 {
+    font-family: "Poppins";
+    font-size: 40px;
+    margin-top: 10px;
+}
+
+.titulo strong {
+    color: #1557d6;
+
+
+    
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.cards article {
+    padding: 30px;
+    border-radius: 22px;
+    color: white;
+    min-height: 370px;
+    transition: .3s;
+}
+
+.cards article:hover {
+    transform: translateY(-8px);
+}
+
+.azul {
+    background: linear-gradient(135deg, #1557d6, #0a2b75);
+}
+
+.laranja {
+    background: linear-gradient(135deg, #ff9b3f, #ed6115);
+}
+
+.verde {
+    background: linear-gradient(135deg, #18ad78, #087052);
+}
+
+.cards i {
+    font-size: 35px;
+}
+
+.cards small {
+    float: right;
+    font-size: 25px;
+    opacity: .5;
+}
+
+.cards h3 {
+    font-family: "Poppins";
+    font-size: 23px;
+    margin: 30px 0 10px;
+}
+
+.cards p {
+    color: #ffffffcc;
+    font-size: 13px;
+}
+
+.cards ul {
+    margin-top: 25px;
+    padding-left: 18px;
+    font-size: 12px;
+    line-height: 2;
+}
+
+.turnos {
+    margin-top: 25px;
+    padding: 22px;
+    border-radius: 18px;
+    background: white;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    border: 1px solid #e5e9f0;
+}
+
+.turnos > i {
+    color: #1557d6;
+    font-size: 25px;
+}
+
+.turnos small {
+    color: #68758a;
+}
+
+.turnos h3 {
+    font-size: 15px;
+}
+
+.turnos a {
+    margin-left: auto;
+    color: #1557d6;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+footer {
+    padding: 25px 7%;
+    background: #07152f;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+}
+
+@media(max-width: 800px) {
+
+    nav a:not(.contato) {
+        display: none;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .turnos {
+        flex-wrap: wrap;
+    }
+
+    .turnos a {
+        margin-left: 0;
+    }
+}
+
+
+.hero {
+    position: relative;
+    }
+    
+    .estudo {
+    position: absolute;
+    right: 8%;
+    top: 50%;
+    transform: translateY(-110%);
+    width: 420px;
+    }
+    
+    .estudo img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 25px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+    }
+    
+    
+    
+    @media (max-width: 800px) {
+    
+
+    .estudo {
+        position: static;
+        transform: none;
+        width: 90%;
+        margin: 30px auto 0;
+    }
+    
+    .estudo img {
+        height: 250px;
+    }
+
+    
+    }
+    

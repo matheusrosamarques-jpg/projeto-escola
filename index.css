@@ -1,0 +1,307 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background: #f6f8fc;
+    color: #172033;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header {
+    height: 78px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 6%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 4px 20px #0000000d;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo i {
+    background: #1557d6;
+    color: white;
+    padding: 13px;
+    border-radius: 12px;
+}
+
+.logo strong {
+    display: block;
+    color: #0c3182;
+}
+
+.logo span {
+    font-size: 11px;
+    color: #68758a;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+nav a {
+    font-size: 13px;
+    font-weight: 600;
+    color: #475467;
+}
+
+nav a:hover,
+nav .ativo {
+    color: #1557d6;
+}
+
+.botao-menu {
+    background: #1557d6;
+    color: white !important;
+    padding: 11px 17px;
+    border-radius: 9px;
+}
+
+.hero {
+    min-height: 650px;
+    padding: 100px 7%;
+    display: grid;
+    grid-template-columns: 1.5fr .8fr;
+    align-items: center;
+    gap: 80px;
+    color: white;
+
+    background:
+        linear-gradient(120deg, #071e52, #1557d6);
+}
+
+.etiqueta {
+    background: #ffffff18;
+    padding: 9px 15px;
+    border-radius: 30px;
+    font-size: 12px;
+}
+
+.hero h1 {
+    font-family: "Poppins";
+    font-size: 60px;
+    line-height: 1.05;
+    max-width: 700px;
+    margin-top: 25px;
+}
+
+.hero h1 span {
+    color: #ffad55;
+}
+
+.hero p {
+    color: #d7e3fa;
+    max-width: 600px;
+    margin: 25px 0;
+}
+
+.botoes {
+    display: flex;
+    gap: 12px;
+}
+
+.btn {
+    padding: 14px 20px;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+.principal {
+    background: #ff8a1f;
+}
+
+.secundario {
+    border: 1px solid #ffffff55;
+}
+
+.card-hero {
+    background: #ffffff12;
+    border: 1px solid #ffffff25;
+    padding: 35px;
+    border-radius: 25px;
+}
+
+.card-hero > i {
+    font-size: 35px;
+    background: #ff8a1f;
+    padding: 18px;
+    border-radius: 15px;
+}
+
+.card-hero small {
+    display: block;
+    margin-top: 25px;
+    color: #ffb86c;
+}
+
+.card-hero h2 {
+    font-family: "Poppins";
+    margin: 10px 0;
+}
+
+.card-hero p {
+    font-size: 13px;
+}
+
+.numeros {
+    background: white;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 30px 7%;
+}
+
+.numeros div {
+    padding: 15px;
+    border-right: 1px solid #e5e9f0;
+    display: flex;
+    flex-direction: column;
+}
+
+.numeros i {
+    color: #1557d6;
+    margin-bottom: 10px;
+}
+
+.numeros strong {
+    font-size: 27px;
+    font-family: "Poppins";
+}
+
+.numeros span {
+    color: #68758a;
+    font-size: 12px;
+}
+
+.destaques {
+    padding: 90px 7%;
+}
+
+.titulo span {
+    color: #1557d6;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.titulo h2 {
+    font-family: "Poppins";
+    font-size: 40px;
+    margin: 10px 0 40px;
+}
+
+.titulo strong {
+    color: #1557d6;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.cards article {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    border: 1px solid #e5e9f0;
+    transition: .3s;
+}
+
+.cards article:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 50px #12244d12;
+}
+
+.cards i {
+    color: #1557d6;
+    font-size: 28px;
+}
+
+.cards h3 {
+    font-family: "Poppins";
+    margin: 20px 0 10px;
+}
+
+.cards p {
+    color: #68758a;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+.cards a {
+    color: #1557d6;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+footer {
+    background: #07152f;
+    color: white;
+    padding: 35px 7%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+}
+
+footer p {
+    color: #9caed0;
+}
+
+@media(max-width: 850px) {
+
+    nav a:not(.botao-menu) {
+        display: none;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 43px;
+    }
+
+    .numeros,
+    .cards {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media(max-width: 550px) {
+
+    .numeros,
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        padding: 70px 6%;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
